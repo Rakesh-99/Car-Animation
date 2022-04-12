@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    overflow: hidden;
+
+}
+.sky img {
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+
+}
+.tree img {
+  /* height: 60vh; */
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.track img {
+  width: 200vw;
+  /* height: 50vh; */
+  position: relative;
+  bottom: -45px;
+  left: 0;
+  animation: road 0.5s linear infinite;
+
+
+
+}
+.car img {
+    width: 300px;
+    height: 83px;
+    background-size: cover;
+    position: absolute;
+    bottom: 172px;
+    left: 190px;
+}
+.carWheel img{
+    width: 51px;
+    height: 50px;
+    object-fit: cover;
+}
+.tyreOne img{
+    position: relative;
+    top: -352px;
+    left: 229px;
+    animation: tire linear 0.4s infinite;
+
+
+}
+.tyreTwo img{
+    position: relative;
+    bottom: 404.5px;
+    left: 380px;
+    animation: tire linear 0.4s infinite;
+
+    
+}
+
+@keyframes tire{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes road{
+100%{
+    transform: translateX(-200px);
+}
+
+}
